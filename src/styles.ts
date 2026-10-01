@@ -6,6 +6,8 @@ const GlobalStyle = createGlobalStyle`
     padding-top: 10px;
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
+    list-style: none;
+
   }
 `
 
@@ -18,6 +20,7 @@ margin: 0 auto;
 display: grid;
 grid-template-columns: 250px auto;
 column-gap: 76px;
+list-style: none;
 
 @media (max-width: 768px) {
   display: block;
