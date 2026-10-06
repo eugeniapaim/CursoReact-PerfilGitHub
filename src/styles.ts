@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
 
   }
+
+  body {
+    padding-bottom: 80px;
+  }
 `
 
 export default GlobalStyle;
