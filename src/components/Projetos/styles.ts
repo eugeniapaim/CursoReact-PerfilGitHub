@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Theme } from "../../themes/dark";
 
 
 export const Card = styled.div`
-  border: 1px solid #ccc;
+  border: 1px solid ${(props) => (props.theme as Theme).borderColor};
   border-radius: 4px;
   padding: 16px;
   list-style: none;
@@ -10,8 +11,8 @@ export const Card = styled.div`
 `
 
 export const LinkBotao = styled.a`
-  color: #fff;
-  background-color: #44768B;
+  color: ${(props) => (props.theme as Theme).backgroundColor};
+  background-color: ${(props) => (props.theme as Theme).backgroundButtonColor};
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;

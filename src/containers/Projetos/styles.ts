@@ -4,7 +4,7 @@ export const List = styled.ul`
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 36px;
-  row-gap: 40pxpx;
+  row-gap: 10px;
 
 
   @media (max-width: 768px) {

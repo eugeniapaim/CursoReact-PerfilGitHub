@@ -3,7 +3,11 @@ import Paragraph from "../../components/Paragrafo";
 import Title from "../../components/Title";
 import { Button, Descrição, SidebarContainer } from "./styles";
 
-const Sidebar = () => {
+type props = {
+  toggleTheme: () => void;
+};
+
+const Sidebar = (props: props) => {
 
   return (
   <aside>
@@ -14,9 +18,9 @@ const Sidebar = () => {
       eugeniapaim
     </Paragraph>
     <Descrição fontSize={14} tipo="principal">
-      Desenvolvedora Front-End | ReactJS | TypeScript | Styled Components
+      Desenvolvedora Front-End | ReactJS | Angular | TypeScript
     </Descrição>
-    <Button>Trocar tema</Button>
+    <Button onClick={props.toggleTheme}>Trocar tema</Button>
     </SidebarContainer>
   </aside>
   )

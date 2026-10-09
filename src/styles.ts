@@ -1,4 +1,5 @@
 import styled, {createGlobalStyle} from 'styled-components';
+import { Theme } from './themes/dark';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -7,11 +8,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
     list-style: none;
-
+    padding-inline-start: 0px;
   }
 
   body {
     padding-bottom: 80px;
+    padding-top: 80px;
+    background-color: ${(props) => (props.theme as Theme).backgroundColor};
   }
 `
 
